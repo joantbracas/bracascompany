@@ -23,3 +23,12 @@ body {
   overflow-x: hidden;
 }
 html { scroll-behavior: smooth !important; }
+<<<<<<< HEAD
+=======
+
+/* Añadido para asegurar el scroll suave hacia los cuestionarios */
+html, body {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+>>>>>>> a8c4ab4b75ea753d20f6cc70d934923ba28cb2b0

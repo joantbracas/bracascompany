@@ -1,0 +1,15 @@
+
+/* Ajustes responsivos para eliminar espacios muertos en móviles */
+@media screen and (max-width: 768px) {
+  section, .cards-container, .main-content {
+    min-height: auto !important;
+    height: auto !important;
+    padding-bottom: 2rem !important;
+    margin-bottom: 0 !important;
+  }
+  
+  /* Asegurar que el contenedor principal fluya sin huecos innecesarios */
+  body, html, app-root {
+    overflow-x: hidden;
+  }
+}

@@ -1,18 +1,41 @@
+<<<<<<< HEAD
 .landing-container {
   width: 100%;
   min-height: 150vh;
   background-color: #0b1a10;
   color: #fff;
+=======
+/* ==========================================
+   1. CONTENEDOR GENERAL Y HERO (DESKTOP)
+   ========================================== */
+.landing-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0b1a10;
+  color: #fff;
+  margin: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+>>>>>>> a8c4ab4b75ea753d20f6cc70d934923ba28cb2b0
 }
 
 .hero {
   position: relative;
   width: 100%;
+<<<<<<< HEAD
   min-height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 40px 0;
+=======
+  min-height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0 20px 0;
+  margin-top: 3px !important;
+>>>>>>> a8c4ab4b75ea753d20f6cc70d934923ba28cb2b0
 }
 
 .hero-background {
@@ -21,7 +44,11 @@
   left: 0;
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
   background: radial-gradient(circle, rgba(16,185,129,0.15) 0%, rgba(11,26,16,1) 80%);
+=======
+  background: transparent !important;
+>>>>>>> a8c4ab4b75ea753d20f6cc70d934923ba28cb2b0
 }
 
 .hero-content {
@@ -36,6 +63,7 @@
   align-items: center;
 }
 
+<<<<<<< HEAD
 /* Bloque principal: Botones izq, Logo centro, Botones der */
 .circular-menu {
   display: flex;
@@ -93,15 +121,106 @@
   height: 140px;
   border-radius: 50%;
   object-fit: cover;
+=======
+/* ==========================================
+   2. MENÚ ORBITAL Y LOGO CENTRAL (DESKTOP)
+   ========================================== */
+.circular-menu {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 400px !important;
+  height: 380px !important;
+  margin: 20px auto 10px auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.hero-logo-wrapper {
+  z-index: 20 !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: 40% !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: 5 !important;
+  margin: 0 !important;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.central-logo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+>>>>>>> a8c4ab4b75ea753d20f6cc70d934923ba28cb2b0
   border: 3px solid rgba(34, 197, 94, 0.8);
   box-shadow: 0 0 30px rgba(34, 197, 94, 0.5);
 }
 
+<<<<<<< HEAD
 /* Título BRACAS COMPANY posicionado abajito de todo el conjunto central */
+=======
+.menu-column {
+  position: absolute !important;
+  width: 100% !important;
+  height: 100% !important;
+  top: 0 !important;
+  left: 0 !important;
+  pointer-events: none;
+}
+
+.menu-column .central-btn {
+  position: absolute !important;
+  pointer-events: auto;
+  width: 145px !important;
+  height: 55px !important;
+  font-size: 0.95rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  border-radius: 25px !important;
+  background: rgba(11, 26, 16, 0.9) !important;
+  border: 1.5px solid rgba(34, 197, 94, 0.8) !important;
+  color: #fff !important;
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  box-shadow: 0 0 12px rgba(34, 197, 94, 0.4) !important;
+  transform: translate(-50%, -50%) !important;
+  transition: all 0.3s ease;
+  word-break: break-word;
+  z-index: 1;
+}
+
+.central-btn:hover {
+  background: rgba(11, 26, 16, 1) !important;
+  box-shadow: 0 0 25px rgba(34, 197, 94, 0.7) !important;
+  transform: translate(-50%, -50%) scale(1.03) !important;
+}
+
+/* Botones de escritorio bien separados hacia afuera para no tapar el logo */
+.menu-column:first-child .central-btn:nth-child(1) { top: 12% !important; left: -35% !important; }
+.menu-column:first-child .central-btn:nth-child(2) { top: 32% !important; left: -38% !important; }
+.menu-column:first-child .central-btn:nth-child(3) { top: 52% !important; left: -38% !important; }
+.menu-column:first-child .central-btn:nth-child(4) { top: 72% !important; left: -35% !important; }
+
+.menu-column:last-child .central-btn:nth-child(1) { top: 12% !important; left: 145% !important; }
+.menu-column:last-child .central-btn:nth-child(2) { top: 32% !important; left: 160% !important; }
+.menu-column:last-child .central-btn:nth-child(3) { top: 52% !important; left: 160% !important; }
+.menu-column:last-child .central-btn:nth-child(4) { top: 72% !important; left: 145% !important; }
+
+>>>>>>> a8c4ab4b75ea753d20f6cc70d934923ba28cb2b0
 .bottom-neon-title-container {
   text-align: center;
   width: 100%;
   margin-top: 10px;
+<<<<<<< HEAD
 }
 
 /* MEDIA QUERY PARA MÓVILES (Realme C55 y Moto G72) */
@@ -319,32 +438,102 @@
 
   .circular-menu {
     display: flex;
+=======
+  margin-bottom: 20px;
+}
+
+/* ==========================================
+   3. SECCIÓN DE PRODUCTOS INFERIOR
+   ========================================== */
+.featured-products {
+  padding: 10px 20px 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.product-grid, .cards-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 2.5rem !important;
+  justify-items: center !important;
+  align-items: center !important;
+  max-width: 900px !important;
+  margin: 0 auto !important;
+}
+
+.product-card, .card {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.product-card h3, .product-card p, .product-card .card-title, .product-card button, .product-card .add-btn, .product-card .price-row, .product-card span, .product-info,
+.card h3, .card p, .card .card-title, .card button, .card .add-btn, .card span {
+  display: none !important;
+}
+
+.product-image, .card-circle, .product-card img, .card img {
+  width: 150px !important;
+  height: 150px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  background: transparent !important;
+}
+
+/* MEDIA QUERY PARA MÓVILES (Realme C55 y Moto G72) */
+@media (max-width: 820px) {
+  .hero {
+    padding: 5px 0 10px 0;
+  }
+
+  .circular-menu {
+>>>>>>> a8c4ab4b75ea753d20f6cc70d934923ba28cb2b0
     flex-direction: row !important;
     flex-wrap: nowrap !important;
     align-items: center !important;
     justify-content: center !important;
     gap: 4px !important;
+<<<<<<< HEAD
     width: 100% !important;
     max-width: 100% !important;
     padding: 0 5px;
     margin-bottom: 15px;
+=======
+    width: 80% !important;
+    margin-bottom: 5px;
+>>>>>>> a8c4ab4b75ea753d20f6cc70d934923ba28cb2b0
   }
   
   .menu-column {
     display: flex !important;
     flex-direction: column !important;
+<<<<<<< HEAD
     width: 32% !important;
+=======
+    width: 22% !important;
+>>>>>>> a8c4ab4b75ea753d20f6cc70d934923ba28cb2b0
     flex-shrink: 0 !important;
     gap: 6px !important;
   }
 
   .hero-logo-wrapper {
+<<<<<<< HEAD
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
     width: 32% !important;
     flex-shrink: 0 !important;
+=======
+  z-index: 20 !important;
+    width: 32% !important;
+>>>>>>> a8c4ab4b75ea753d20f6cc70d934923ba28cb2b0
     margin: 0 2px !important;
   }
 
@@ -357,6 +546,7 @@
     border-radius: 12px !important;
   }
 
+<<<<<<< HEAD
   .central-logo {
     width: 85px !important;
     height: 85px !important;
@@ -395,3 +585,243 @@
     border-radius: 50% !important;
   }
 }
+=======
+  .central-logo {     /* logo realme */
+    width: 60px !important;
+    height: 60px !important;
+    min-width: 60px !important;
+    min-height: 60px !important;
+  }
+
+  .product-grid, .cards-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+
+  .product-image, .card-circle, .product-card img, .card img {
+    width: 125px !important;
+    height: 125px !important;
+  }
+}
+
+/* Eliminar espacio inferior muerto entre las cards y el final de la página / footer */
+.landing-container {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+  min-height: auto !important;
+}
+
+.featured-products {
+  padding-bottom: 10px !important;
+  margin-bottom: 0 !important;
+}
+
+.product-grid, .cards-grid {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Aumentar tamaño de logo central, botones y fuente en el Moto G72 sin romper la alineación de 3 columnas */
+@media screen and (max-width: 820px) {  /* Compu / Moto g72*/
+  .central-logo {
+  width: 180px !important;    /* Ancho del logo */
+  height: 180px !important;   /* Alto del logo */
+  min-width: 140px !important;
+  min-height: 140px !important;
+  border-radius: 50% !important;
+  object-fit: cover;
+  border: 3px solid rgba(34, 197, 94, 0.8);
+  box-shadow: 0 0 30px rgba(34, 197, 94, 0.5);
+}
+
+  .central-btn {
+    font-size: 0.65rem !important;
+    padding: 8px 4px !important;
+    letter-spacing: -0.1px !important;
+  }
+
+  .circular-menu {
+    gap: 7px !important;
+  }
+
+  .menu-column {
+    gap: 8px !important;
+  }
+}
+/* Contenedor principal que sirve de plano cartesiano para ubicar los botones */
+.circular-menu {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 400px !important;
+  height: 400px !important; /* Espacio circular de trabajo */
+  margin: 20px auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* El logo se queda estático y centrado en el medio del círculo */
+.hero-logo-wrapper {
+  z-index: 20 !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: 35% !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: 5 !important;
+  margin: 0 !important;
+}
+
+/* Contenedores o botones individuales listos para mover a pulso */
+.menu-column {
+  position: absolute !important;
+  width: 100% !important;
+  height: 100% !important;
+  top: 0 !important;
+  left: 0 !important;
+  pointer-events: none; /* Para que el contenedor no estorbe, solo los botones */
+}
+
+.menu-column .central-btn { /* compu / moto */
+  position: absolute !important;
+  pointer-events: auto;
+  width: 145px !important;    /* <-- Aumenta o disminuye el ancho aquí */
+  height: 55px !important;   /* <-- Aumenta o disminuye el alto aquí */
+  font-size: 0.95rem !important; /* <-- Tamaño del texto dentro del botón */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  border-radius: 25px !important; /* <-- Bordes redondeados más amplios */
+  background: rgba(11, 26, 16, 0.9) !important;
+  border: 1.5px solid rgba(34, 197, 94, 0.8) !important;
+  box-shadow: 0 0 12px rgba(34, 197, 94, 0.4) !important;
+  transform: translate(-50%, -50%) !important; 
+}
+
+/* 
+  ¡AQUÍ MUEVES CADA BOTÓN A TU ANTOJO CON PORCENTAJES!
+  Modifica el 'top' y el 'left' de cada uno para armar el círculo perfecto:
+*/
+
+/* Botón 1 (Ej: Arriba Izquierda) */
+.menu-column:first-child .central-btn:nth-child(1) {
+  top: 10% !important;
+  left: 20% !important;
+}
+
+/* Botón 2 (Ej: Centro Izquierda) */
+.menu-column:first-child .central-btn:nth-child(2) {
+  top: 28% !important;
+  left: 12% !important;
+}
+
+/* Botón 3 (Ej: Abajo Izquierda) */
+.menu-column:first-child .central-btn:nth-child(3) {
+  top: 46% !important;
+  left: 13% !important;
+}
+
+/* Botón 4 (Ej: Fondo Izquierda) */
+.menu-column:first-child .central-btn:nth-child(4) {
+  top: 64% !important;
+  left: 20% !important;
+}
+
+/* Botón 5 (Ej: Arriba Derecha) */
+.menu-column:last-child .central-btn:nth-child(1) {
+  top: 10% !important;
+  left: 80% !important;
+}
+
+/* Botón 6 (Ej: Centro Derecha) */
+.menu-column:last-child .central-btn:nth-child(2) {
+  top: 28% !important;
+  left: 88% !important;
+}
+
+/* Botón 7 (Ej: Abajo Derecha) */
+.menu-column:last-child .central-btn:nth-child(3) {
+  top: 46% !important;
+  left: 87% !important;
+}
+
+/* Botón 8 (Ej: Fondo Derecha) */
+.menu-column:last-child .central-btn:nth-child(4) {
+  top: 64% !important;
+  left: 80% !important;
+}
+/* Compactar el contenedor circular y acercar el título BRACAS COMPANY */
+.circular-menu {
+  height: 280px !important;     /* Reducimos la altura total del óvalo invisible para cerrar el espacio */
+  max-width: 380px !important;
+  margin: 0 auto -20px auto !important; /* Un margen inferior negativo chupa el espacio hacia arriba */
+}
+
+.bottom-neon-title-container {
+  margin-top: -10px !important;  /* Empuja el título hacia arriba para que quede pegado a los botones */
+  margin-bottom: 10px !important;
+}
+/* --- AJUSTE EXCLUSIVO PARA RESOLUCIÓN DE REALME C55 --- */
+@media screen and (max-width: 393px) {
+  /* Tamaño más compacto del logo central en Realme */
+  .central-logo {
+    width: 130px !important;
+    height: 130px !important;
+    min-width: 100px !important;
+    min-height: 100px !important;
+    left: 50%;
+  }
+
+  /* Tamaño más compacto de los botones en Realme */
+  .menu-column .central-btn {
+    width: 110px !important; /* largor del boton */
+    height: 36px !important;
+    left: 49%;
+    font-size: 0.85rem !important;
+  }
+
+  /* Ajustar el contenedor circular para que no se expande de más */
+  .circular-menu {
+    height: 260px !important;
+    max-width: 320px !important;
+  }
+
+  /* --- BOTONES MÁS CERCANOS AL LOGO (CENTRADOS) --- */
+
+/* Lado Izquierdo (acercándose hacia el 50% de la pantalla) */
+.menu-column:first-child .central-btn:nth-child(1) {
+  top: 15% !important;
+  left: 23% !important; /* Antes estaba más a la orilla, súbelo a 34% o bájalo a 30% */
+}
+.menu-column:first-child .central-btn:nth-child(2) {
+  top: 29% !important;
+  left: 18% !important; /* Acércalo al 35% si quieres que peguen más al logo */
+}
+.menu-column:first-child .central-btn:nth-child(3) {
+  top: 43.5% !important;
+  left: 18% !important;
+}
+.menu-column:first-child .central-btn:nth-child(4) {
+  top: 58% !important;
+  left: 23% !important;
+}
+
+/* Lado Derecho (acercándose hacia el 50% de la pantalla) */
+.menu-column:last-child .central-btn:nth-child(1) {
+  top: 15% !important;
+  left: 79% !important; /* Bájalo a 66% o súbelo a 70% para acercarlo */
+}
+.menu-column:last-child .central-btn:nth-child(2) {
+  top: 29% !important;
+  left: 84% !important; /* Acércalo bajándolo a 65% o déjalo cerca del centro */
+}
+.menu-column:last-child .central-btn:nth-child(3) {
+  top: 43.5% !important;
+  left: 84% !important;
+}
+.menu-column:last-child .central-btn:nth-child(4) {
+  top: 58% !important;
+  left: 78% !important;
+}
+}
+>>>>>>> a8c4ab4b75ea753d20f6cc70d934923ba28cb2b0
